@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import ToDos from "./ToDos";
+import ToDos from "./ToDos.js";
 
 const App = () => {
 

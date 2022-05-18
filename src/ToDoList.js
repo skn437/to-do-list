@@ -4,15 +4,15 @@ const ToDoList = ({todos}) => {
 
         <div id="todos">
 
-            {todos.map(todo => (
+            {/*todos.map(todo => (
 
-                <div id="todo-preview" key={todo.id}>
+                <div key={todo.id}>
 
                     <p>{todo.content}</p>
 
                 </div>
 
-            ))}
+            ))*/}
 
         </div>
 

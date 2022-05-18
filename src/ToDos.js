@@ -1,5 +1,5 @@
-import useFetch  from "./useFetch";
-import ToDoList from "./ToDoList";
+import useFetch  from "./useFetch.js";
+import ToDoList from "./ToDoList.js";
 
 const ToDos = () => {
 
