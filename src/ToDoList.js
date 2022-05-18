@@ -1,10 +1,12 @@
 const ToDoList = ({todos}) => {
 
+    console.log(`This is: `, todos);
+
     return (
 
         <div id="todos">
 
-            {/*todos.map(todo => (
+            {todos.map(todo => (
 
                 <div key={todo.id}>
 
@@ -12,7 +14,7 @@ const ToDoList = ({todos}) => {
 
                 </div>
 
-            ))*/}
+            ))}
 
         </div>
 
