@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import ToDos from "./ToDo.js";
+import ToDo from "./ToDo.js";
 
 const App = () => {
 
@@ -11,7 +11,7 @@ const App = () => {
 
                 <Routes>
 
-                    <Route path="/" element={<ToDos></ToDos>}></Route>
+                    <Route path="/" element={<ToDo></ToDo>}></Route>
 
                 </Routes>
 
