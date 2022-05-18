@@ -1,4 +1,5 @@
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import ToDos from "./ToDos";
 
 const App = () => {
 
@@ -8,12 +9,15 @@ const App = () => {
 
             <div className="App">
 
+                <Routes>
 
+                    <Route path="/" element={<ToDos></ToDos>}></Route>
+
+                </Routes>
 
             </div>
 
         </Router>
-
 
     );
 
