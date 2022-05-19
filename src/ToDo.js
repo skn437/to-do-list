@@ -1,3 +1,4 @@
+import CreateToDo from "./CreateToDo.js";
 import { useFetch }  from "./CustomHooks.js";
 import ToDoList from "./ToDoList.js";
 
@@ -9,11 +10,12 @@ const ToDos = () => {
 
         <div id="todo-list">
 
-            <h2>To Do List:</h2>
+            <h1>To Do List:</h1>
 
             {isLoading && (<div>Loading...</div>)}
 
             <ToDoList todos={todos}></ToDoList>
+            <CreateToDo></CreateToDo>
 
         </div>
 

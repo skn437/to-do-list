@@ -1,4 +1,4 @@
-import { collection, onSnapshot } from "firebase/firestore";
+import { collection, deleteDoc, doc, onSnapshot } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { db } from "./Firebase.js";
 
@@ -28,16 +28,24 @@ const useFetch = () => {
 
     }, []);
 
-    console.log(`Fetched Data: `, todos, isLoading);
-
     return {todos, isLoading};
 
 };
 
-const useDummy = () => {
+const useDelete = id => {
 
-    console.log(`Hell`);
+    const docRef = doc(db, "todos", id);
+
+    deleteDoc(docRef).then(() => {
+
+        console.log(`Item deleted of `, id);
+
+    }).catch(err => {
+
+        console.log(err.message);
+
+    });
 
 };
  
-export {useFetch, useDummy};
+export {useFetch, useDelete};
