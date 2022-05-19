@@ -1,4 +1,4 @@
-import { collection, deleteDoc, doc, onSnapshot } from "firebase/firestore";
+import { collection, deleteDoc, doc, onSnapshot, orderBy, query } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { db } from "./Firebase.js";
 
@@ -8,10 +8,12 @@ const useFetch = () => {
     const [isLoading, setIsLoading] = useState(true);
 
     const colRef = collection(db, "todos");
+    const q = query(colRef, orderBy("createdAt", "desc"));
+
 
     useEffect(() => {
 
-        onSnapshot(colRef, snapshot => {
+        onSnapshot(q, snapshot => {
 
             let todoProto = [];
 

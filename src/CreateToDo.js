@@ -37,12 +37,13 @@ const CreateToDo = () => {
 
         <div id="create-list">
 
-            <form onSubmit={handleAdd}>
+            <form id="create-form" onSubmit={handleAdd}>
 
                 <label htmlFor="create-to-do">Add New To-Do: </label><br/><br/>
                 <input type="text" id="create-to-do" placeholder="type something...." value={todo} onChange={e => setToDo(e.target.value)}></input>
+                <br/><br/>
 
-                {!isLoading ? <button>Add</button> : <button disabled>Adding</button>}
+                {!isLoading ? <button className="add-button">Add</button> : <button className="add-button" disabled>Adding</button>}
 
             </form>
 

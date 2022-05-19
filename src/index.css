@@ -15,7 +15,6 @@
 
     margin: 10px;
 
-
 }
 
 .App #todo-list h1{
@@ -42,5 +41,66 @@
     border: 1px solid grey;
     font-family: arial;
     cursor: pointer;
+
+}
+
+.App #todo-list #create-list{
+
+    margin: 10px auto;
+    width: 960px;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+
+}
+
+.App #todo-list #create-list #create-form{
+
+    margin: 10px auto;
+    width: 960px;
+
+}
+
+.App #todo-list #create-list #create-form label{
+
+    position: relative;
+    left: -30.5%;
+    color: grey;
+
+}
+
+.App #todo-list #create-list #create-form #create-to-do{
+
+    margin: 10px auto;
+    width: 700px;
+    padding: 2px;
+    border: none;
+    border-bottom: 3px solid grey;
+    outline: none;
+
+}
+
+.App #todo-list #create-list #create-form #create-to-do:focus{
+
+    border-bottom: 3px solid red;
+    transition: 2s;
+
+}
+
+.App #todo-list #create-list #create-form .add-button{
+
+    border: none;
+    padding: 5px;
+    width: 4em;
+    cursor: pointer;
+    background: rgb(92, 88, 88);
+    color: white;
+
+}
+
+.App #todo-list #create-list #create-form .add-button:hover{
+
+    background: green;
+    transition: 2s;
 
 }
